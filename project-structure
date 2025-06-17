@@ -1,0 +1,24 @@
+broken-auth-lab/
+│
+├── app/                    # Flask application code
+│   ├── __init__.py
+│   ├── routes.py           # Main routes (register/login/reset)
+│   ├── auth.py             # Auth-related functions
+│   ├── db.py               # SQLite helper functions
+│   ├── templates/          # HTML files
+│   └── static/             # CSS, JS, images
+│
+├── attack_console/         # JS-based console to replay attacks
+│   └── console.html
+│
+├── vulnerable_features/    # Optional puzzle modules (CAPTCHA, MFA bypass)
+│   ├── mfa_bypass.py
+│   └── captcha.py
+│
+├── database/               # Pre-loaded vulnerable user data
+│   └── init.sql
+│
+├── run.py                  # Run Flask app
+├── requirements.txt
+├── README.md
+└── .env                    # (Optional) Config secrets
