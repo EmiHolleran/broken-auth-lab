@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Module 8: Attack Timeline</h2>
+<ul>
+{% for event in attacks %}
+    <li>[{{ event.time }}] - {{ event.action }}</li>
+{% endfor %}
+</ul>
+<p>Simulated record of attacker actions to understand detection importance.</p>
+{% endblock %}
