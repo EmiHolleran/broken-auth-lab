@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Broken Auth Lab</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body class="terminal">
+    <nav class="navbar">
+        <button onclick="toggleNav()">☰ Menu</button>
+        <ul id="nav-links" class="hidden">
+            <li><a href="/">Home</a></li>
+            <li><a href="/module1">Login Weakness</a></li>
+            <li><a href="/module2">Password Reset</a></li>
+            <li><a href="/module3">Brute Force</a></li>
+            <li><a href="/module4">MFA Bypass</a></li>
+            <li><a href="/module5">CAPTCHA Weakness</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Welcome to the Broken Authentication Lab</h1>
+        <p>Explore how authentication mechanisms fail and what secure alternatives look like.</p>
+        <ul>
+            <li><strong>Session Fixation</strong>: Hijack session via predictable tokens</li>
+            <li><strong>Rate Limiting</strong>: Defeat brute-force</li>
+            <li><strong>Timing Attacks</strong>: Leak sensitive info from timing</li>
+        </ul>
+    </main>
+    <script src="/static/script.js"></script>
+</body>
+</html>
