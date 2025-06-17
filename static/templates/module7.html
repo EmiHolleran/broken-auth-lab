@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Module 7: Replay Attack</h2>
+<form method="post">
+    <label>Token: <input type="text" name="token"></label><br>
+    <button type="submit">Replay</button>
+</form>
+<p>This simulates submitting a reused token. Try using "valid123".</p>
+{% endblock %}
