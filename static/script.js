@@ -1,4 +1,4 @@
 function toggleNav() {
-  const nav = document.getElementById('nave-links');
-  nav.classList.toggle('hidden');
+    const nav = document.getElementById('nav-links');
+    nav.classList.toggle('hidden');
 }
