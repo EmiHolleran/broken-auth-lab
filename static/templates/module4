@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Module 4: MFA Bypass</h2>
+<p>This simulates a scenario where MFA validation is skipped due to flawed logic.</p>
+<p><em>Coming soon: Try altering the MFA step in developer tools.</em></p>
+{% endblock %}
