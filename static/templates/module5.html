@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Module 5: CAPTCHA Logic Flaw</h2>
+<p>This simulates a CAPTCHA that always returns true if the correct parameter is guessed.</p>
+<form method="post">
+    <label>CAPTCHA: <input type="text" name="captcha"></label><br>
+    <button type="submit">Submit</button>
+</form>
+{% endblock %}
