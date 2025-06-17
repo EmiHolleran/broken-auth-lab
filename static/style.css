@@ -1,0 +1,40 @@
+body.terminal {
+    background: #1e1e1e;
+    color: #00ff88;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    background: #111;
+    padding: 10px;
+}
+.navbar button {
+    background: transparent;
+    color: #00ff88;
+    border: none;
+    font-size: 1.2em;
+}
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    display: none;
+}
+.navbar ul li a {
+    color: #00ff88;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+}
+.hidden { display: none; }
+
+/* Responsive Styling */
+@media (min-width: 600px) {
+    .navbar ul {
+        display: flex !important;
+        gap: 10px;
+    }
+    .navbar button {
+        display: none;
+    }
+}
