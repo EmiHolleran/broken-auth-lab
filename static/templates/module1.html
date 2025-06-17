@@ -1,23 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Weakness</title>
-    <link rel="stylesheet" href="/static/style.css">
-</head>
-<body class="terminal">
-    <nav class="navbar">
-        <a href="/">⬅ Back</a>
-    </nav>
-    <main>
-        <h2>Module 1: Weak Login System</h2>
-        <p>This page demonstrates a login page vulnerable to brute-force attacks and weak credentials.</p>
-        <form method="post" action="/login">
-            <label>Username: <input type="text" name="username"></label><br>
-            <label>Password: <input type="password" name="password"></label><br>
-            <button type="submit">Login</button>
-        </form>
-    </main>
-</body>
-</html>
+{% extends "base.html" %}
+{% block content %}
+<h2>Module 1: Weak Login System</h2>
+<form method="post">
+    <label>Username: <input type="text" name="username"></label><br>
+    <label>Password: <input type="password" name="password"></label><br>
+    <button type="submit">Login</button>
+</form>
+{% endblock %}
